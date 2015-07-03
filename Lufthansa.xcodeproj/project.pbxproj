@@ -14,6 +14,13 @@
 		EBC55AB21B471EE700FEBB5A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBC55AB11B471EE700FEBB5A /* Images.xcassets */; };
 		EBC55AB51B471EE700FEBB5A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBC55AB31B471EE700FEBB5A /* LaunchScreen.xib */; };
 		EBC55AC11B471EE700FEBB5A /* LufthansaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC55AC01B471EE700FEBB5A /* LufthansaTests.m */; };
+		EBC55AD01B471F9100FEBB5A /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC55ACB1B471F9100FEBB5A /* bg@2x.png */; };
+		EBC55AD11B471F9100FEBB5A /* Hamburger@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC55ACC1B471F9100FEBB5A /* Hamburger@2x.png */; };
+		EBC55AD21B471F9100FEBB5A /* Logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC55ACD1B471F9100FEBB5A /* Logo@2x.png */; };
+		EBC55AD31B471F9100FEBB5A /* New@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC55ACE1B471F9100FEBB5A /* New@2x.png */; };
+		EBC55AD41B471F9100FEBB5A /* Selector@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC55ACF1B471F9100FEBB5A /* Selector@2x.png */; };
+		EBC55AD91B4731AD00FEBB5A /* DetailControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC55AD81B4731AD00FEBB5A /* DetailControllerViewController.m */; };
+		EBC55ADC1B47346600FEBB5A /* ColorGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC55ADB1B47346600FEBB5A /* ColorGenerator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +47,15 @@
 		EBC55ABA1B471EE700FEBB5A /* LufthansaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LufthansaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC55ABF1B471EE700FEBB5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBC55AC01B471EE700FEBB5A /* LufthansaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LufthansaTests.m; sourceTree = "<group>"; };
+		EBC55ACB1B471F9100FEBB5A /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = "<group>"; };
+		EBC55ACC1B471F9100FEBB5A /* Hamburger@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hamburger@2x.png"; sourceTree = "<group>"; };
+		EBC55ACD1B471F9100FEBB5A /* Logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo@2x.png"; sourceTree = "<group>"; };
+		EBC55ACE1B471F9100FEBB5A /* New@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "New@2x.png"; sourceTree = "<group>"; };
+		EBC55ACF1B471F9100FEBB5A /* Selector@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Selector@2x.png"; sourceTree = "<group>"; };
+		EBC55AD71B4731AD00FEBB5A /* DetailControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailControllerViewController.h; sourceTree = "<group>"; };
+		EBC55AD81B4731AD00FEBB5A /* DetailControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailControllerViewController.m; sourceTree = "<group>"; };
+		EBC55ADA1B47346600FEBB5A /* ColorGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorGenerator.h; sourceTree = "<group>"; };
+		EBC55ADB1B47346600FEBB5A /* ColorGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorGenerator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,14 +97,19 @@
 		EBC55AA31B471EE700FEBB5A /* Lufthansa */ = {
 			isa = PBXGroup;
 			children = (
+				EBC55ACA1B471F7D00FEBB5A /* Images */,
 				EBC55AA81B471EE700FEBB5A /* AppDelegate.h */,
 				EBC55AA91B471EE700FEBB5A /* AppDelegate.m */,
 				EBC55AAB1B471EE700FEBB5A /* ViewController.h */,
 				EBC55AAC1B471EE700FEBB5A /* ViewController.m */,
+				EBC55AD71B4731AD00FEBB5A /* DetailControllerViewController.h */,
+				EBC55AD81B4731AD00FEBB5A /* DetailControllerViewController.m */,
 				EBC55AAE1B471EE700FEBB5A /* Main.storyboard */,
 				EBC55AB11B471EE700FEBB5A /* Images.xcassets */,
 				EBC55AB31B471EE700FEBB5A /* LaunchScreen.xib */,
 				EBC55AA41B471EE700FEBB5A /* Supporting Files */,
+				EBC55ADA1B47346600FEBB5A /* ColorGenerator.h */,
+				EBC55ADB1B47346600FEBB5A /* ColorGenerator.m */,
 			);
 			path = Lufthansa;
 			sourceTree = "<group>";
@@ -117,6 +138,18 @@
 				EBC55ABF1B471EE700FEBB5A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EBC55ACA1B471F7D00FEBB5A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EBC55ACB1B471F9100FEBB5A /* bg@2x.png */,
+				EBC55ACC1B471F9100FEBB5A /* Hamburger@2x.png */,
+				EBC55ACD1B471F9100FEBB5A /* Logo@2x.png */,
+				EBC55ACE1B471F9100FEBB5A /* New@2x.png */,
+				EBC55ACF1B471F9100FEBB5A /* Selector@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,8 +233,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBC55AB01B471EE700FEBB5A /* Main.storyboard in Resources */,
+				EBC55AD21B471F9100FEBB5A /* Logo@2x.png in Resources */,
+				EBC55AD11B471F9100FEBB5A /* Hamburger@2x.png in Resources */,
 				EBC55AB51B471EE700FEBB5A /* LaunchScreen.xib in Resources */,
 				EBC55AB21B471EE700FEBB5A /* Images.xcassets in Resources */,
+				EBC55AD41B471F9100FEBB5A /* Selector@2x.png in Resources */,
+				EBC55AD31B471F9100FEBB5A /* New@2x.png in Resources */,
+				EBC55AD01B471F9100FEBB5A /* bg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +259,8 @@
 			files = (
 				EBC55AAD1B471EE700FEBB5A /* ViewController.m in Sources */,
 				EBC55AAA1B471EE700FEBB5A /* AppDelegate.m in Sources */,
+				EBC55AD91B4731AD00FEBB5A /* DetailControllerViewController.m in Sources */,
+				EBC55ADC1B47346600FEBB5A /* ColorGenerator.m in Sources */,
 				EBC55AA71B471EE700FEBB5A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,6 +390,7 @@
 				INFOPLIST_FILE = Lufthansa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -360,6 +401,7 @@
 				INFOPLIST_FILE = Lufthansa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
