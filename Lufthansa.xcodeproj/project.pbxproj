@@ -59,6 +59,9 @@
 		EBC55B2E1B47EDA900FEBB5A /* recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBC55B2D1B47EDA900FEBB5A /* recipes.plist */; };
 		EBC55B311B47EE0A00FEBB5A /* SimpleTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC55B301B47EE0A00FEBB5A /* SimpleTableCell.m */; };
 		EBC55B331B47EE1A00FEBB5A /* SimpleTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBC55B321B47EE1A00FEBB5A /* SimpleTableCell.xib */; };
+		EBC55B381B47F6AB00FEBB5A /* Trip.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC55B371B47F6AB00FEBB5A /* Trip.m */; };
+		EBC55B3B1B47F83300FEBB5A /* DataAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC55B3A1B47F83300FEBB5A /* DataAccessor.m */; };
+		EBC55B3E1B47F85F00FEBB5A /* QueryPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC55B3D1B47F85F00FEBB5A /* QueryPacket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +139,12 @@
 		EBC55B2F1B47EE0A00FEBB5A /* SimpleTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableCell.h; sourceTree = "<group>"; };
 		EBC55B301B47EE0A00FEBB5A /* SimpleTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableCell.m; sourceTree = "<group>"; };
 		EBC55B321B47EE1A00FEBB5A /* SimpleTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleTableCell.xib; sourceTree = "<group>"; };
+		EBC55B361B47F6AB00FEBB5A /* Trip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trip.h; sourceTree = "<group>"; };
+		EBC55B371B47F6AB00FEBB5A /* Trip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trip.m; sourceTree = "<group>"; };
+		EBC55B391B47F83300FEBB5A /* DataAccessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataAccessor.h; sourceTree = "<group>"; };
+		EBC55B3A1B47F83300FEBB5A /* DataAccessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataAccessor.m; sourceTree = "<group>"; };
+		EBC55B3C1B47F85F00FEBB5A /* QueryPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueryPacket.h; sourceTree = "<group>"; };
+		EBC55B3D1B47F85F00FEBB5A /* QueryPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueryPacket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +186,7 @@
 		EBC55AA31B471EE700FEBB5A /* Lufthansa */ = {
 			isa = PBXGroup;
 			children = (
+				EBC55B351B47F69500FEBB5A /* Models */,
 				EBC55AEC1B47D9DA00FEBB5A /* Controllers */,
 				EBC55ACA1B471F7D00FEBB5A /* Images */,
 				EBC55AA81B471EE700FEBB5A /* AppDelegate.h */,
@@ -185,8 +195,6 @@
 				EBC55AB11B471EE700FEBB5A /* Images.xcassets */,
 				EBC55AB31B471EE700FEBB5A /* LaunchScreen.xib */,
 				EBC55AA41B471EE700FEBB5A /* Supporting Files */,
-				EBC55ADA1B47346600FEBB5A /* ColorGenerator.h */,
-				EBC55ADB1B47346600FEBB5A /* ColorGenerator.m */,
 			);
 			path = Lufthansa;
 			sourceTree = "<group>";
@@ -194,6 +202,8 @@
 		EBC55AA41B471EE700FEBB5A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EBC55ADA1B47346600FEBB5A /* ColorGenerator.h */,
+				EBC55ADB1B47346600FEBB5A /* ColorGenerator.m */,
 				EBC55AA51B471EE700FEBB5A /* Info.plist */,
 				EBC55AA61B471EE700FEBB5A /* main.m */,
 			);
@@ -338,6 +348,19 @@
 			name = TableCell;
 			sourceTree = "<group>";
 		};
+		EBC55B351B47F69500FEBB5A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EBC55B361B47F6AB00FEBB5A /* Trip.h */,
+				EBC55B371B47F6AB00FEBB5A /* Trip.m */,
+				EBC55B391B47F83300FEBB5A /* DataAccessor.h */,
+				EBC55B3A1B47F83300FEBB5A /* DataAccessor.m */,
+				EBC55B3C1B47F85F00FEBB5A /* QueryPacket.h */,
+				EBC55B3D1B47F85F00FEBB5A /* QueryPacket.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -477,13 +500,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBC55B381B47F6AB00FEBB5A /* Trip.m in Sources */,
 				EBC55AAD1B471EE700FEBB5A /* ViewController.m in Sources */,
+				EBC55B3E1B47F85F00FEBB5A /* QueryPacket.m in Sources */,
 				EBC55AAA1B471EE700FEBB5A /* AppDelegate.m in Sources */,
 				EBC55B311B47EE0A00FEBB5A /* SimpleTableCell.m in Sources */,
 				EBC55AD91B4731AD00FEBB5A /* DetailControllerViewController.m in Sources */,
 				EBC55AEB1B47D9D200FEBB5A /* TripViewController.m in Sources */,
 				EBC55ADC1B47346600FEBB5A /* ColorGenerator.m in Sources */,
 				EBC55AF21B47DA0C00FEBB5A /* ReceiptViewController.m in Sources */,
+				EBC55B3B1B47F83300FEBB5A /* DataAccessor.m in Sources */,
 				EBC55AA71B471EE700FEBB5A /* main.m in Sources */,
 				EBC55AEF1B47D9FF00FEBB5A /* ConfirmViewController.m in Sources */,
 			);
