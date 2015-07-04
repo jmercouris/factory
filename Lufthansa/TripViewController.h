@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Trip.h"
+#import "DataAccessor.h"
 
 @interface TripViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 

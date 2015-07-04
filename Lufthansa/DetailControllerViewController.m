@@ -8,9 +8,16 @@
 
 #import "DetailControllerViewController.h"
 #import "ColorGenerator.h"
+#import "QueryPacket.h"
 
 @interface DetailControllerViewController ()
 @property (weak, nonatomic) IBOutlet UIView *headerView;
+@property (weak, nonatomic) IBOutlet UITextField *departureAddress;
+@property (weak, nonatomic) IBOutlet UITextField *arrivalAddress;
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
+@property (weak, nonatomic) IBOutlet UIStepper *luggageStepper;
+@property (weak, nonatomic) IBOutlet UITextField *luggageCount;
+- (IBAction)getData:(id)sender;
 
 @end
 
@@ -36,5 +43,22 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)getData:(id)sender {
+    QueryPacket *packet;
+    packet = [[QueryPacket alloc]init];
+    
+    packet.departureAddress = _departureAddress.text;
+    packet.arrivalAddress = _arrivalAddress.text;
+    
+    // Set Date
+    NSDate *date = _datePicker.date;
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    [df setDateFormat:@"M/d/yyyy"];
+    packet.date = [df stringFromDate:date];
+    
+    packet.luggageCount = _luggageCount.text;
+
+}
 
 @end

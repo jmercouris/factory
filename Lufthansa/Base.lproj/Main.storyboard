@@ -282,6 +282,7 @@
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
+                                                    <action selector="getData:" destination="2MD-XG-blw" eventType="touchUpInside" id="9SL-Vm-bJf"/>
                                                     <segue destination="Dp3-ow-fPG" kind="show" id="R2d-CT-Yax"/>
                                                 </connections>
                                             </button>
@@ -371,7 +372,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="arrivalAddress" destination="i3M-8v-Ofy" id="jUD-bk-tSL"/>
+                        <outlet property="datePicker" destination="tgc-al-wwd" id="dOF-cB-Chw"/>
+                        <outlet property="departureAddress" destination="ulf-pd-Pyy" id="97P-sW-K3w"/>
                         <outlet property="headerView" destination="8DA-hM-YHR" id="6gl-b2-7rN"/>
+                        <outlet property="luggageCount" destination="Dt1-CT-Lef" id="j3n-X4-DSo"/>
+                        <outlet property="luggageStepper" destination="nAz-lu-GBu" id="GEK-eE-6ol"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2I7-dD-Yrm" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -10,4 +10,11 @@
 
 @interface QueryPacket : NSObject
 
+
+@property NSString *departureAddress;
+@property NSString *arrivalAddress;
+@property NSString *date;
+@property NSString *luggageCount;
+
+
 @end

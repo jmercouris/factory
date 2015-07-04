@@ -10,4 +10,9 @@
 
 @implementation QueryPacket
 
+@synthesize departureAddress = _departureAddress;
+@synthesize arrivalAddress = _arrivalAddress;
+@synthesize date = _date;
+@synthesize luggageCount = _luggageCount;
+
 @end

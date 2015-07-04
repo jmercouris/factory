@@ -16,4 +16,16 @@
 @synthesize totalTripInformation = _totalTripInformation;
 
 
+// Default Constructor
+- (id)init
+{
+    if( self = [super init] )
+    {
+        // Initialize your object here
+    }
+    
+    return self;
+}
+
+
 @end
