@@ -465,29 +465,29 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Trip: Sa 04 Jul 15, 5:10am-9:30am" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVZ-If-Tsd">
-                                <rect key="frame" x="32" y="187" width="265" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trip: Sa 04 Jul 15, 5:10am-9:30am" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVZ-If-Tsd">
+                                <rect key="frame" x="32" y="186" width="265" height="20.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="0.20000000000000001" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Pin.png" translatesAutoresizingMaskIntoConstraints="NO" id="nIL-vB-VTH">
-                                <rect key="frame" x="32" y="226" width="10" height="15"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pin.png" translatesAutoresizingMaskIntoConstraints="NO" id="nIL-vB-VTH">
+                                <rect key="frame" x="32" y="217.5" width="10" height="15"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Berlin - Munich" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8W9-ZJ-PCd">
-                                <rect key="frame" x="50" y="223" width="110" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Berlin - Munich" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8W9-ZJ-PCd">
+                                <rect key="frame" x="50" y="214.5" width="110" height="20.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="0.20000000000000001" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Triangle.png" translatesAutoresizingMaskIntoConstraints="NO" id="MIh-70-Yv9">
-                                <rect key="frame" x="168" y="230" width="8" height="6"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Triangle.png" translatesAutoresizingMaskIntoConstraints="NO" id="MIh-70-Yv9">
+                                <rect key="frame" x="168" y="221.5" width="8" height="6"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Line.png" translatesAutoresizingMaskIntoConstraints="NO" id="rlz-SA-3lR">
-                                <rect key="frame" x="32" y="251" width="536" height="3"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line.png" translatesAutoresizingMaskIntoConstraints="NO" id="rlz-SA-3lR">
+                                <rect key="frame" x="32" y="242.5" width="536" height="3"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Price: 124,32 $" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMf-lV-VY1">
-                                <rect key="frame" x="411" y="495" width="156.5" height="20.5"/>
+                                <rect key="frame" x="411.5" y="495" width="156.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -501,6 +501,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Wg9-SL-NMi" kind="show" id="wT6-sv-BgV"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line.png" translatesAutoresizingMaskIntoConstraints="NO" id="lbP-hn-zRo">
                                 <rect key="frame" x="32" y="484.5" width="536" height="3"/>
@@ -512,7 +515,7 @@
                             <constraint firstItem="tEp-iI-0pS" firstAttribute="top" secondItem="2VR-hi-9Nw" secondAttribute="bottom" constant="16" id="0zd-gQ-7Hs"/>
                             <constraint firstItem="ZMf-lV-VY1" firstAttribute="top" secondItem="lbP-hn-zRo" secondAttribute="bottom" constant="8" id="29m-0d-AMN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lbP-hn-zRo" secondAttribute="trailing" constant="16" id="2fm-rF-aMK"/>
-                            <constraint firstItem="8W9-ZJ-PCd" firstAttribute="top" secondItem="bVZ-If-Tsd" secondAttribute="bottom" constant="16" id="3Xb-pk-oH8"/>
+                            <constraint firstItem="8W9-ZJ-PCd" firstAttribute="top" secondItem="bVZ-If-Tsd" secondAttribute="bottom" constant="8" id="3Xb-pk-oH8"/>
                             <constraint firstItem="Yph-Ke-Gan" firstAttribute="top" secondItem="FnG-FZ-yX0" secondAttribute="topMargin" id="3dR-Wf-3RT"/>
                             <constraint firstItem="bVZ-If-Tsd" firstAttribute="leading" secondItem="FnG-FZ-yX0" secondAttribute="leadingMargin" constant="16" id="3z6-Za-A9C"/>
                             <constraint firstItem="2VR-hi-9Nw" firstAttribute="top" secondItem="ZMf-lV-VY1" secondAttribute="bottom" constant="8" id="5Fl-Kd-4TD"/>
@@ -622,10 +625,13 @@
                             <constraint firstItem="fcO-4v-IPp" firstAttribute="leading" secondItem="klZ-OT-gkY" secondAttribute="leadingMargin" constant="-16" id="wdT-XV-wO8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="headerView" destination="fcO-4v-IPp" id="ej9-SA-kws"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fTR-b5-Pge" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2824" y="317"/>
+            <point key="canvasLocation" x="2824" y="332"/>
         </scene>
     </scenes>
     <resources>
