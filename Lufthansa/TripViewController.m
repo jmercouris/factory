@@ -58,8 +58,8 @@ NSArray *urlResults;
     
     // indexPath.row ( current index )
     cell.timeLabel.text = @"5:00am - 9:00am";
-    cell.priceLabel.text = @"lol";
-    cell.prepTimeLabel.text = @"haha";
+    cell.priceLabel.text = @"Default";
+    cell.prepTimeLabel.text = @"Default";
     //cell.prepTimeLabel.text = [prepTime objectAtIndex:indexPath.row];
     
     return cell;
