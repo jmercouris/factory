@@ -257,6 +257,7 @@
 		EBC55AEC1B47D9DA00FEBB5A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				EBC55B341B47EF5000FEBB5A /* TableCell */,
 				EBC55AE91B47D9D200FEBB5A /* TripViewController.h */,
 				EBC55AEA1B47D9D200FEBB5A /* TripViewController.m */,
 				EBC55AAB1B471EE700FEBB5A /* ViewController.h */,
@@ -306,9 +307,6 @@
 		EBC55B0C1B47ED6C00FEBB5A /* Temporary */ = {
 			isa = PBXGroup;
 			children = (
-				EBC55B321B47EE1A00FEBB5A /* SimpleTableCell.xib */,
-				EBC55B2F1B47EE0A00FEBB5A /* SimpleTableCell.h */,
-				EBC55B301B47EE0A00FEBB5A /* SimpleTableCell.m */,
 				EBC55B2D1B47EDA900FEBB5A /* recipes.plist */,
 				EBC55B0D1B47ED8E00FEBB5A /* angry_birds_cake.jpg */,
 				EBC55B0E1B47ED8E00FEBB5A /* creme_brelee.jpg */,
@@ -328,6 +326,16 @@
 				EBC55B1C1B47ED8E00FEBB5A /* white_chocolate_donut.jpg */,
 			);
 			name = Temporary;
+			sourceTree = "<group>";
+		};
+		EBC55B341B47EF5000FEBB5A /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				EBC55B321B47EE1A00FEBB5A /* SimpleTableCell.xib */,
+				EBC55B2F1B47EE0A00FEBB5A /* SimpleTableCell.h */,
+				EBC55B301B47EE0A00FEBB5A /* SimpleTableCell.m */,
+			);
+			name = TableCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

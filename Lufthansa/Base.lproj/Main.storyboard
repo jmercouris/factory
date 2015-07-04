@@ -71,6 +71,9 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="8OB-ra-gEp" kind="show" id="dxe-ZH-Q9t"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3d-Id-0OT">
                                 <rect key="frame" x="543" y="36" width="25" height="22"/>
@@ -635,12 +638,6 @@
                                     <segue destination="Wg9-SL-NMi" kind="show" id="wT6-sv-BgV"/>
                                 </connections>
                             </button>
-                            <tableViewCell contentMode="scaleToFill" fixedFrame="YES" selectionStyle="default" indentationWidth="10" translatesAutoresizingMaskIntoConstraints="NO" id="Osb-pF-cHf">
-                                <rect key="frame" x="-131" y="394" width="320" height="44"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Osb-pF-cHf" id="qaL-KM-dtQ">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOV-oK-0Qt">
                                 <rect key="frame" x="32" y="253" width="54" height="20.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
@@ -884,7 +881,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="wks-tX-X4c"/>
-        <segue reference="fRs-s1-q9F"/>
-        <segue reference="G4z-Rw-YKa"/>
+        <segue reference="dxe-ZH-Q9t"/>
+        <segue reference="joH-WR-1cU"/>
     </inferredMetricsTieBreakers>
 </document>

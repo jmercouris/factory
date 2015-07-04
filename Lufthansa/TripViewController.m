@@ -55,7 +55,7 @@ NSArray *prepTime;
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 78;
+    return 115;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -69,8 +69,9 @@ NSArray *prepTime;
         cell = [nib objectAtIndex:0];
     }
     
-    cell.nameLabel.text = [tableData objectAtIndex:indexPath.row];
-    cell.thumbnailImageView.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
+    // indexPath.row ( current index )
+    cell.timeLabel.text = @"5:00am - 9:00am";
+    cell.priceLabel.text = @"lol";
     cell.prepTimeLabel.text = [prepTime objectAtIndex:indexPath.row];
     
     return cell;

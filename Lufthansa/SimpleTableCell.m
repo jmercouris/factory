@@ -9,9 +9,9 @@
 #import "SimpleTableCell.h"
 
 @implementation SimpleTableCell
-@synthesize nameLabel = _nameLabel;
+@synthesize timeLabel = _timeLabel;
 @synthesize prepTimeLabel = _prepTimeLabel;
-@synthesize thumbnailImageView = _thumbnailImageView;
+@synthesize priceLabel = _priceLabel;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
