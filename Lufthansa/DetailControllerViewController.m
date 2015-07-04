@@ -10,7 +10,6 @@
 #import "ColorGenerator.h"
 
 @interface DetailControllerViewController ()
-@property (strong, nonatomic) IBOutlet UIView *rootView;
 @property (weak, nonatomic) IBOutlet UIView *headerView;
 
 @end
@@ -20,7 +19,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [_rootView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"bg.png"]]];
     [_headerView setBackgroundColor:([ColorGenerator colorWithHexString:@"163876" ])];
 }
 

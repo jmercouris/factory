@@ -19,7 +19,7 @@
     // Override point for customization after application launch.
     
     // Change Status bar color to white
-    [application setStatusBarHidden:YES];
+    [application setStatusBarHidden:NO];
     [application setStatusBarStyle:UIStatusBarStyleLightContent];
 
     return YES;
