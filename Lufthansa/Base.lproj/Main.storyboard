@@ -282,8 +282,7 @@
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="getData:" destination="2MD-XG-blw" eventType="touchUpInside" id="9SL-Vm-bJf"/>
-                                                    <segue destination="Dp3-ow-fPG" kind="show" id="R2d-CT-Yax"/>
+                                                    <segue destination="Dp3-ow-fPG" kind="show" identifier="bookingSegue" id="R2d-CT-Yax"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -382,7 +381,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2I7-dD-Yrm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="755" y="317"/>
+            <point key="canvasLocation" x="579" y="317"/>
         </scene>
         <!--Trip View Controller-->
         <scene sceneID="KCB-tQ-Dc8">
@@ -886,8 +885,8 @@
         <image name="pickup service.png" width="351" height="46"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wks-tX-X4c"/>
-        <segue reference="dxe-ZH-Q9t"/>
-        <segue reference="joH-WR-1cU"/>
+        <segue reference="R2d-CT-Yax"/>
+        <segue reference="G4z-Rw-YKa"/>
+        <segue reference="fRs-s1-q9F"/>
     </inferredMetricsTieBreakers>
 </document>

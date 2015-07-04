@@ -12,4 +12,6 @@
 
 @interface TripViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
+@property (nonatomic, strong) QueryPacket *queryPacket;
+
 @end

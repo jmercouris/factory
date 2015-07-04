@@ -9,6 +9,7 @@
 #import "DetailControllerViewController.h"
 #import "ColorGenerator.h"
 #import "QueryPacket.h"
+#import "TripViewController.h"
 
 @interface DetailControllerViewController ()
 @property (weak, nonatomic) IBOutlet UIView *headerView;
@@ -17,7 +18,6 @@
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
 @property (weak, nonatomic) IBOutlet UIStepper *luggageStepper;
 @property (weak, nonatomic) IBOutlet UITextField *luggageCount;
-- (IBAction)getData:(id)sender;
 
 @end
 
@@ -34,31 +34,29 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.destinationViewController respondsToSelector:@selector(setQueryPacket:)]) {
+        
+        QueryPacket *packet;
+        packet = [[QueryPacket alloc]init];
+        
+        packet.departureAddress = _departureAddress.text;
+        packet.arrivalAddress = _arrivalAddress.text;
+        
+        
+        // Set Date
+        NSDate *date = _datePicker.date;
+        NSDateFormatter *df = [[NSDateFormatter alloc] init];
+        [df setDateFormat:@"yyyy-MM-dd'T'HH:mm '+0200'"];
+        packet.date = [df stringFromDate:date];
+        packet.luggageCount = _luggageCount.text;
+        
 
-- (IBAction)getData:(id)sender {
-    QueryPacket *packet;
-    packet = [[QueryPacket alloc]init];
-    
-    packet.departureAddress = _departureAddress.text;
-    packet.arrivalAddress = _arrivalAddress.text;
-    
-    // Set Date
-    NSDate *date = _datePicker.date;
-    NSDateFormatter *df = [[NSDateFormatter alloc] init];
-    [df setDateFormat:@"M/d/yyyy"];
-    packet.date = [df stringFromDate:date];
-    
-    packet.luggageCount = _luggageCount.text;
-
+        [segue.destinationViewController performSelector:@selector(setQueryPacket:)
+                                              withObject:packet];
+    }
 }
 
 @end

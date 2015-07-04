@@ -9,6 +9,7 @@
 #import "TripViewController.h"
 #import "ColorGenerator.h"
 #import "SimpleTableCell.h"
+#import "DataAccessor.h"
 
 @interface TripViewController ()
 @property (strong, nonatomic) IBOutlet UIView *headerView;
@@ -17,8 +18,9 @@
 
 @implementation TripViewController
 NSArray *tableData;
-NSArray *thumbnails;
-NSArray *prepTime;
+NSArray *urlResults;
+@synthesize queryPacket = _queryPacket;
+
 
 
 - (void)viewDidLoad {
@@ -28,7 +30,9 @@ NSArray *prepTime;
     
     // Initialize table data
     tableData = [NSArray arrayWithObjects:@"Egg Benedict", nil];
-
+    
+    
+    [DataAccessor getData:_queryPacket];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
