@@ -29,6 +29,17 @@
 		EBC55AEB1B47D9D200FEBB5A /* TripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC55AEA1B47D9D200FEBB5A /* TripViewController.m */; };
 		EBC55AEF1B47D9FF00FEBB5A /* ConfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC55AEE1B47D9FF00FEBB5A /* ConfirmViewController.m */; };
 		EBC55AF21B47DA0C00FEBB5A /* ReceiptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC55AF11B47DA0C00FEBB5A /* ReceiptViewController.m */; };
+		EBC55AF81B47DBA800FEBB5A /* car@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC55AF61B47DBA800FEBB5A /* car@2x.png */; };
+		EBC55AF91B47DBA800FEBB5A /* plane@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC55AF71B47DBA800FEBB5A /* plane@2x.png */; };
+		EBC55AFF1B47DBC400FEBB5A /* Line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC55AFA1B47DBC400FEBB5A /* Line@2x.png */; };
+		EBC55B001B47DBC400FEBB5A /* pickup service@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC55AFB1B47DBC400FEBB5A /* pickup service@2x.png */; };
+		EBC55B011B47DBC400FEBB5A /* Pin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC55AFC1B47DBC400FEBB5A /* Pin@2x.png */; };
+		EBC55B021B47DBC400FEBB5A /* Triangle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC55AFD1B47DBC400FEBB5A /* Triangle@2x.png */; };
+		EBC55B031B47DBC400FEBB5A /* TripGraph@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC55AFE1B47DBC400FEBB5A /* TripGraph@2x.png */; };
+		EBC55B081B47DBED00FEBB5A /* Buttons_confirm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC55B041B47DBED00FEBB5A /* Buttons_confirm@2x.png */; };
+		EBC55B091B47DBED00FEBB5A /* Check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC55B051B47DBED00FEBB5A /* Check@2x.png */; };
+		EBC55B0A1B47DBED00FEBB5A /* Next step@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC55B061B47DBED00FEBB5A /* Next step@2x.png */; };
+		EBC55B0B1B47DBED00FEBB5A /* Thanks@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC55B071B47DBED00FEBB5A /* Thanks@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +86,17 @@
 		EBC55AEE1B47D9FF00FEBB5A /* ConfirmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmViewController.m; sourceTree = "<group>"; };
 		EBC55AF01B47DA0C00FEBB5A /* ReceiptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceiptViewController.h; sourceTree = "<group>"; };
 		EBC55AF11B47DA0C00FEBB5A /* ReceiptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceiptViewController.m; sourceTree = "<group>"; };
+		EBC55AF61B47DBA800FEBB5A /* car@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car@2x.png"; sourceTree = "<group>"; };
+		EBC55AF71B47DBA800FEBB5A /* plane@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plane@2x.png"; sourceTree = "<group>"; };
+		EBC55AFA1B47DBC400FEBB5A /* Line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Line@2x.png"; sourceTree = "<group>"; };
+		EBC55AFB1B47DBC400FEBB5A /* pickup service@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pickup service@2x.png"; sourceTree = "<group>"; };
+		EBC55AFC1B47DBC400FEBB5A /* Pin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pin@2x.png"; sourceTree = "<group>"; };
+		EBC55AFD1B47DBC400FEBB5A /* Triangle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Triangle@2x.png"; sourceTree = "<group>"; };
+		EBC55AFE1B47DBC400FEBB5A /* TripGraph@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TripGraph@2x.png"; sourceTree = "<group>"; };
+		EBC55B041B47DBED00FEBB5A /* Buttons_confirm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Buttons_confirm@2x.png"; sourceTree = "<group>"; };
+		EBC55B051B47DBED00FEBB5A /* Check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Check@2x.png"; sourceTree = "<group>"; };
+		EBC55B061B47DBED00FEBB5A /* Next step@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Next step@2x.png"; sourceTree = "<group>"; };
+		EBC55B071B47DBED00FEBB5A /* Thanks@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Thanks@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +181,9 @@
 		EBC55ACA1B471F7D00FEBB5A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				EBC55AF51B47DB9C00FEBB5A /* Trip */,
+				EBC55AF41B47DB9400FEBB5A /* Receipt */,
+				EBC55AF31B47DB8600FEBB5A /* Confirm Trip */,
 				EBC55ADE1B47C20B00FEBB5A /* Screen Booking */,
 				EBC55ADD1B47C1F600FEBB5A /* Screen Root */,
 			);
@@ -204,6 +229,38 @@
 				EBC55AF11B47DA0C00FEBB5A /* ReceiptViewController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		EBC55AF31B47DB8600FEBB5A /* Confirm Trip */ = {
+			isa = PBXGroup;
+			children = (
+				EBC55AF61B47DBA800FEBB5A /* car@2x.png */,
+				EBC55AF71B47DBA800FEBB5A /* plane@2x.png */,
+			);
+			name = "Confirm Trip";
+			sourceTree = "<group>";
+		};
+		EBC55AF41B47DB9400FEBB5A /* Receipt */ = {
+			isa = PBXGroup;
+			children = (
+				EBC55B041B47DBED00FEBB5A /* Buttons_confirm@2x.png */,
+				EBC55B051B47DBED00FEBB5A /* Check@2x.png */,
+				EBC55B061B47DBED00FEBB5A /* Next step@2x.png */,
+				EBC55B071B47DBED00FEBB5A /* Thanks@2x.png */,
+			);
+			name = Receipt;
+			sourceTree = "<group>";
+		};
+		EBC55AF51B47DB9C00FEBB5A /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				EBC55AFA1B47DBC400FEBB5A /* Line@2x.png */,
+				EBC55AFB1B47DBC400FEBB5A /* pickup service@2x.png */,
+				EBC55AFC1B47DBC400FEBB5A /* Pin@2x.png */,
+				EBC55AFD1B47DBC400FEBB5A /* Triangle@2x.png */,
+				EBC55AFE1B47DBC400FEBB5A /* TripGraph@2x.png */,
+			);
+			name = Trip;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,19 +343,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBC55B011B47DBC400FEBB5A /* Pin@2x.png in Resources */,
+				EBC55B091B47DBED00FEBB5A /* Check@2x.png in Resources */,
+				EBC55AFF1B47DBC400FEBB5A /* Line@2x.png in Resources */,
+				EBC55B0B1B47DBED00FEBB5A /* Thanks@2x.png in Resources */,
+				EBC55B031B47DBC400FEBB5A /* TripGraph@2x.png in Resources */,
 				EBC55AB01B471EE700FEBB5A /* Main.storyboard in Resources */,
+				EBC55B081B47DBED00FEBB5A /* Buttons_confirm@2x.png in Resources */,
 				EBC55AD21B471F9100FEBB5A /* Logo@2x.png in Resources */,
 				EBC55AD11B471F9100FEBB5A /* Hamburger@2x.png in Resources */,
+				EBC55AF81B47DBA800FEBB5A /* car@2x.png in Resources */,
 				EBC55AB51B471EE700FEBB5A /* LaunchScreen.xib in Resources */,
 				EBC55AE61B47C30100FEBB5A /* Arrow@2x.png in Resources */,
 				EBC55AB21B471EE700FEBB5A /* Images.xcassets in Resources */,
 				EBC55AE41B47C22000FEBB5A /* TripType@2x.png in Resources */,
+				EBC55B021B47DBC400FEBB5A /* Triangle@2x.png in Resources */,
+				EBC55B001B47DBC400FEBB5A /* pickup service@2x.png in Resources */,
 				EBC55AD41B471F9100FEBB5A /* Selector@2x.png in Resources */,
 				EBC55AE21B47C22000FEBB5A /* Info@2x.png in Resources */,
 				EBC55AD31B471F9100FEBB5A /* New@2x.png in Resources */,
 				EBC55AD01B471F9100FEBB5A /* bg@2x.png in Resources */,
 				EBC55AE31B47C22000FEBB5A /* Time@2x.png in Resources */,
+				EBC55B0A1B47DBED00FEBB5A /* Next step@2x.png in Resources */,
 				EBC55AE81B47D57A00FEBB5A /* Background@2x.png in Resources */,
+				EBC55AF91B47DBA800FEBB5A /* plane@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

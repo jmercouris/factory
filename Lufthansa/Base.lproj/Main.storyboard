@@ -372,10 +372,10 @@
             </objects>
             <point key="canvasLocation" x="955" y="317"/>
         </scene>
-        <!--View Controller-->
+        <!--Trip View Controller-->
         <scene sceneID="KCB-tQ-Dc8">
             <objects>
-                <viewController id="Dp3-ow-fPG" sceneMemberID="viewController">
+                <viewController id="Dp3-ow-fPG" customClass="TripViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4kP-Bo-lvU"/>
                         <viewControllerLayoutGuide type="bottom" id="vDH-Gq-oqE"/>
@@ -401,10 +401,10 @@
             </objects>
             <point key="canvasLocation" x="1583" y="317"/>
         </scene>
-        <!--View Controller-->
+        <!--Confirm View Controller-->
         <scene sceneID="lVf-he-NgE">
             <objects>
-                <viewController id="8OB-ra-gEp" sceneMemberID="viewController">
+                <viewController id="8OB-ra-gEp" customClass="ConfirmViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JjO-Qr-dyU"/>
                         <viewControllerLayoutGuide type="bottom" id="tEp-iI-0pS"/>
@@ -447,6 +447,24 @@
                                     <constraint firstAttribute="bottom" secondItem="leL-LU-VNJ" secondAttribute="bottom" constant="16" id="phg-VG-j1w"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Step 3:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNH-du-jFq">
+                                <rect key="frame" x="37" y="107" width="55" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Confirm your trip" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RhM-cC-8gi">
+                                <rect key="frame" x="67" y="163" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trip: Sa 04 Jul 15, 5:10am-9:30am" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVZ-If-Tsd">
+                                <rect key="frame" x="67" y="216" width="264" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -455,15 +473,18 @@
                             <constraint firstItem="Yph-Ke-Gan" firstAttribute="leading" secondItem="FnG-FZ-yX0" secondAttribute="leadingMargin" constant="-16" id="pVK-yH-yK0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="headerView" destination="Yph-Ke-Gan" id="IuL-FK-0fg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fWV-0P-7vr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2206" y="317"/>
         </scene>
-        <!--View Controller-->
+        <!--Receipt View Controller-->
         <scene sceneID="Dcb-o6-d3l">
             <objects>
-                <viewController id="Wg9-SL-NMi" sceneMemberID="viewController">
+                <viewController id="Wg9-SL-NMi" customClass="ReceiptViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sVu-3l-il7"/>
                         <viewControllerLayoutGuide type="bottom" id="8L7-Tr-3Ly"/>

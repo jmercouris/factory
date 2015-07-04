@@ -7,8 +7,10 @@
 //
 
 #import "ConfirmViewController.h"
+#import "ColorGenerator.h"
 
 @interface ConfirmViewController ()
+@property (strong, nonatomic) IBOutlet UIView *headerView;
 
 @end
 
@@ -17,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [_headerView setBackgroundColor:([ColorGenerator colorWithHexString:@"163876" ])];
 }
 
 - (void)didReceiveMemoryWarning {
