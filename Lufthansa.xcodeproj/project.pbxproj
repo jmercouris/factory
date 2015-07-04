@@ -26,6 +26,9 @@
 		EBC55AE41B47C22000FEBB5A /* TripType@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC55AE11B47C22000FEBB5A /* TripType@2x.png */; };
 		EBC55AE61B47C30100FEBB5A /* Arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC55AE51B47C30100FEBB5A /* Arrow@2x.png */; };
 		EBC55AE81B47D57A00FEBB5A /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC55AE71B47D57A00FEBB5A /* Background@2x.png */; };
+		EBC55AEB1B47D9D200FEBB5A /* TripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC55AEA1B47D9D200FEBB5A /* TripViewController.m */; };
+		EBC55AEF1B47D9FF00FEBB5A /* ConfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC55AEE1B47D9FF00FEBB5A /* ConfirmViewController.m */; };
+		EBC55AF21B47DA0C00FEBB5A /* ReceiptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC55AF11B47DA0C00FEBB5A /* ReceiptViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,12 @@
 		EBC55AE11B47C22000FEBB5A /* TripType@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TripType@2x.png"; sourceTree = "<group>"; };
 		EBC55AE51B47C30100FEBB5A /* Arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Arrow@2x.png"; sourceTree = "<group>"; };
 		EBC55AE71B47D57A00FEBB5A /* Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@2x.png"; sourceTree = "<group>"; };
+		EBC55AE91B47D9D200FEBB5A /* TripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripViewController.h; sourceTree = "<group>"; };
+		EBC55AEA1B47D9D200FEBB5A /* TripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripViewController.m; sourceTree = "<group>"; };
+		EBC55AED1B47D9FF00FEBB5A /* ConfirmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmViewController.h; sourceTree = "<group>"; };
+		EBC55AEE1B47D9FF00FEBB5A /* ConfirmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmViewController.m; sourceTree = "<group>"; };
+		EBC55AF01B47DA0C00FEBB5A /* ReceiptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceiptViewController.h; sourceTree = "<group>"; };
+		EBC55AF11B47DA0C00FEBB5A /* ReceiptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceiptViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,13 +116,10 @@
 		EBC55AA31B471EE700FEBB5A /* Lufthansa */ = {
 			isa = PBXGroup;
 			children = (
+				EBC55AEC1B47D9DA00FEBB5A /* Controllers */,
 				EBC55ACA1B471F7D00FEBB5A /* Images */,
 				EBC55AA81B471EE700FEBB5A /* AppDelegate.h */,
 				EBC55AA91B471EE700FEBB5A /* AppDelegate.m */,
-				EBC55AAB1B471EE700FEBB5A /* ViewController.h */,
-				EBC55AAC1B471EE700FEBB5A /* ViewController.m */,
-				EBC55AD71B4731AD00FEBB5A /* DetailControllerViewController.h */,
-				EBC55AD81B4731AD00FEBB5A /* DetailControllerViewController.m */,
 				EBC55AAE1B471EE700FEBB5A /* Main.storyboard */,
 				EBC55AB11B471EE700FEBB5A /* Images.xcassets */,
 				EBC55AB31B471EE700FEBB5A /* LaunchScreen.xib */,
@@ -181,6 +187,23 @@
 				EBC55AE11B47C22000FEBB5A /* TripType@2x.png */,
 			);
 			name = "Screen Booking";
+			sourceTree = "<group>";
+		};
+		EBC55AEC1B47D9DA00FEBB5A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EBC55AE91B47D9D200FEBB5A /* TripViewController.h */,
+				EBC55AEA1B47D9D200FEBB5A /* TripViewController.m */,
+				EBC55AAB1B471EE700FEBB5A /* ViewController.h */,
+				EBC55AAC1B471EE700FEBB5A /* ViewController.m */,
+				EBC55AD71B4731AD00FEBB5A /* DetailControllerViewController.h */,
+				EBC55AD81B4731AD00FEBB5A /* DetailControllerViewController.m */,
+				EBC55AED1B47D9FF00FEBB5A /* ConfirmViewController.h */,
+				EBC55AEE1B47D9FF00FEBB5A /* ConfirmViewController.m */,
+				EBC55AF01B47DA0C00FEBB5A /* ReceiptViewController.h */,
+				EBC55AF11B47DA0C00FEBB5A /* ReceiptViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,8 +319,11 @@
 				EBC55AAD1B471EE700FEBB5A /* ViewController.m in Sources */,
 				EBC55AAA1B471EE700FEBB5A /* AppDelegate.m in Sources */,
 				EBC55AD91B4731AD00FEBB5A /* DetailControllerViewController.m in Sources */,
+				EBC55AEB1B47D9D200FEBB5A /* TripViewController.m in Sources */,
 				EBC55ADC1B47346600FEBB5A /* ColorGenerator.m in Sources */,
+				EBC55AF21B47DA0C00FEBB5A /* ReceiptViewController.m in Sources */,
 				EBC55AA71B471EE700FEBB5A /* main.m in Sources */,
+				EBC55AEF1B47D9FF00FEBB5A /* ConfirmViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
