@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -165,41 +166,49 @@
                                     <constraint firstAttribute="trailing" secondItem="wOK-FW-bvs" secondAttribute="trailing" constant="16" id="j2W-fa-shC"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Info.png" translatesAutoresizingMaskIntoConstraints="NO" id="F2H-VB-6oZ">
-                                <rect key="frame" x="16" y="88" width="568" height="84"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 1:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXR-uc-btn">
-                                <rect key="frame" x="16" y="188" width="88" height="33.5"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="28"/>
-                                <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose exact location and time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dme-yN-Pln">
-                                <rect key="frame" x="16" y="229" width="286" height="25"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="21"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TripType.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZdE-KU-bRy">
-                                <rect key="frame" x="16" y="262" width="568" height="46"/>
-                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VjS-Mx-uMa">
+                                <rect key="frame" x="0.0" y="80" width="600" height="520"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gYc-Ac-hgo" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="704"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Info.png" translatesAutoresizingMaskIntoConstraints="NO" id="2vA-te-Lvn">
+                                                <rect key="frame" x="21" y="8" width="380" height="111"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="704" id="l54-wM-eIH"/>
+                                            <constraint firstAttribute="trailing" secondItem="2vA-te-Lvn" secondAttribute="trailing" constant="8" id="lxf-1H-iev"/>
+                                            <constraint firstAttribute="width" constant="600" id="qPX-js-lmh"/>
+                                            <constraint firstItem="2vA-te-Lvn" firstAttribute="leading" secondItem="gYc-Ac-hgo" secondAttribute="leading" constant="8" id="uRy-UT-jNg"/>
+                                            <constraint firstItem="2vA-te-Lvn" firstAttribute="top" secondItem="gYc-Ac-hgo" secondAttribute="top" constant="8" id="vPI-TQ-Zhl"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="qPX-js-lmh"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="gYc-Ac-hgo" firstAttribute="top" secondItem="VjS-Mx-uMa" secondAttribute="top" id="Bnd-hk-P3S"/>
+                                    <constraint firstItem="gYc-Ac-hgo" firstAttribute="leading" secondItem="VjS-Mx-uMa" secondAttribute="leading" id="bW9-QO-vxn"/>
+                                    <constraint firstAttribute="trailing" secondItem="gYc-Ac-hgo" secondAttribute="trailing" id="cAN-80-UQ7"/>
+                                    <constraint firstAttribute="bottom" secondItem="gYc-Ac-hgo" secondAttribute="bottom" id="y9z-P4-y15"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="dme-yN-Pln" firstAttribute="top" secondItem="hXR-uc-btn" secondAttribute="bottom" constant="8" id="04E-Tm-7cv"/>
                             <constraint firstItem="8DA-hM-YHR" firstAttribute="top" secondItem="K0Q-dZ-WqZ" secondAttribute="topMargin" id="1Pv-tm-V2S"/>
-                            <constraint firstItem="hXR-uc-btn" firstAttribute="leading" secondItem="K0Q-dZ-WqZ" secondAttribute="leadingMargin" id="6Qb-uV-hzd"/>
                             <constraint firstItem="8DA-hM-YHR" firstAttribute="top" secondItem="K0Q-dZ-WqZ" secondAttribute="topMargin" id="7E1-hm-fm7"/>
-                            <constraint firstItem="hXR-uc-btn" firstAttribute="top" secondItem="F2H-VB-6oZ" secondAttribute="bottom" constant="16" id="E1d-iP-vov"/>
+                            <constraint firstItem="VjS-Mx-uMa" firstAttribute="top" secondItem="8DA-hM-YHR" secondAttribute="bottom" id="A6K-Ce-854"/>
+                            <constraint firstItem="gtI-UX-xAM" firstAttribute="top" secondItem="VjS-Mx-uMa" secondAttribute="bottom" id="EaR-qh-X0v"/>
                             <constraint firstItem="8DA-hM-YHR" firstAttribute="leading" secondItem="K0Q-dZ-WqZ" secondAttribute="leadingMargin" constant="-16" id="Qsf-cx-xEo"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ZdE-KU-bRy" secondAttribute="trailing" id="ZxJ-13-khs"/>
-                            <constraint firstItem="ZdE-KU-bRy" firstAttribute="top" secondItem="dme-yN-Pln" secondAttribute="bottom" constant="8" id="aTd-mx-hgW"/>
-                            <constraint firstItem="ZdE-KU-bRy" firstAttribute="leading" secondItem="K0Q-dZ-WqZ" secondAttribute="leadingMargin" id="c4h-Lg-xqs"/>
-                            <constraint firstItem="F2H-VB-6oZ" firstAttribute="top" secondItem="8DA-hM-YHR" secondAttribute="bottom" constant="8" id="dPX-kq-ABj"/>
-                            <constraint firstItem="dme-yN-Pln" firstAttribute="leading" secondItem="K0Q-dZ-WqZ" secondAttribute="leadingMargin" id="eKH-Jp-haJ"/>
+                            <constraint firstItem="VjS-Mx-uMa" firstAttribute="leading" secondItem="K0Q-dZ-WqZ" secondAttribute="leading" id="Qxk-S0-DS9"/>
+                            <constraint firstAttribute="trailing" secondItem="VjS-Mx-uMa" secondAttribute="trailing" id="ZXF-9O-rbo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8DA-hM-YHR" secondAttribute="trailing" constant="-16" id="sqd-jh-N6r"/>
-                            <constraint firstItem="F2H-VB-6oZ" firstAttribute="leading" secondItem="K0Q-dZ-WqZ" secondAttribute="leadingMargin" id="w7b-5b-1L2"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="F2H-VB-6oZ" secondAttribute="trailing" id="zFi-fA-ejF"/>
                         </constraints>
                     </view>
                     <connections>
@@ -218,6 +227,5 @@
         <image name="Logo.png" width="188" height="51"/>
         <image name="New.png" width="60" height="26"/>
         <image name="Selector.png" width="5" height="48"/>
-        <image name="TripType.png" width="351" height="46"/>
     </resources>
 </document>
