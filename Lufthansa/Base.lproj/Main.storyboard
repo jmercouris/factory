@@ -464,10 +464,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pickup service.png" translatesAutoresizingMaskIntoConstraints="NO" id="smV-09-2gi">
-                                <rect key="frame" x="32" y="290.5" width="536" height="46"/>
+                                <rect key="frame" x="32" y="290" width="536" height="46"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0G-dy-tnD">
-                                <rect key="frame" x="50" y="475" width="85" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0G-dy-tnD">
+                                <rect key="frame" x="32" y="554" width="85" height="30"/>
                                 <state key="normal" title="Next Screen">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -475,23 +475,38 @@
                                     <segue destination="8OB-ra-gEp" kind="show" id="fRs-s1-q9F"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="QZz-eK-DHd">
+                                <rect key="frame" x="32" y="352.5" width="536" height="185.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Dp3-ow-fPG" id="FJq-eV-LRq"/>
+                                    <outlet property="delegate" destination="Dp3-ow-fPG" id="3Rb-kL-bl8"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="R0G-dy-tnD" firstAttribute="top" secondItem="smV-09-2gi" secondAttribute="bottom" constant="16" id="3tw-0N-mdL"/>
                             <constraint firstItem="OPs-um-KZp" firstAttribute="leading" secondItem="blO-83-PiX" secondAttribute="trailing" constant="8" id="5DK-AZ-cUS"/>
                             <constraint firstItem="E9Z-mh-jbf" firstAttribute="top" secondItem="GNz-w5-AFb" secondAttribute="bottom" constant="16" id="6cN-gr-5Dp"/>
+                            <constraint firstItem="QZz-eK-DHd" firstAttribute="top" secondItem="smV-09-2gi" secondAttribute="bottom" constant="16" id="97b-ya-UQB"/>
                             <constraint firstItem="YdC-cM-wwl" firstAttribute="leading" secondItem="djx-61-3Xl" secondAttribute="leadingMargin" constant="16" id="AJd-hY-ftf"/>
                             <constraint firstItem="OPs-um-KZp" firstAttribute="centerY" secondItem="blO-83-PiX" secondAttribute="centerY" id="ARy-WB-OwW"/>
+                            <constraint firstItem="R0G-dy-tnD" firstAttribute="top" secondItem="QZz-eK-DHd" secondAttribute="bottom" constant="16" id="CvY-eR-cFp"/>
                             <constraint firstItem="F0X-5L-cZX" firstAttribute="leading" secondItem="OPs-um-KZp" secondAttribute="trailing" constant="8" id="Jzh-wj-1Fm"/>
                             <constraint firstItem="OPs-um-KZp" firstAttribute="centerY" secondItem="F0X-5L-cZX" secondAttribute="centerY" id="MUj-5Q-gnY"/>
                             <constraint firstItem="qxR-x3-6HT" firstAttribute="leading" secondItem="djx-61-3Xl" secondAttribute="leadingMargin" constant="16" id="N6D-Sd-Kip"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QZz-eK-DHd" secondAttribute="trailing" constant="16" id="RkE-rv-77C"/>
                             <constraint firstItem="XaZ-Is-hO1" firstAttribute="top" secondItem="E9Z-mh-jbf" secondAttribute="bottom" constant="16" id="T3c-2B-J2T"/>
+                            <constraint firstItem="QZz-eK-DHd" firstAttribute="leading" secondItem="djx-61-3Xl" secondAttribute="leadingMargin" constant="16" id="Vd4-hg-kW9"/>
+                            <constraint firstItem="R0G-dy-tnD" firstAttribute="leading" secondItem="djx-61-3Xl" secondAttribute="leadingMargin" constant="16" id="Wqq-Hz-HWf"/>
                             <constraint firstItem="qxR-x3-6HT" firstAttribute="top" secondItem="XaZ-Is-hO1" secondAttribute="bottom" constant="16" id="dLY-Mz-23z"/>
                             <constraint firstItem="blO-83-PiX" firstAttribute="leading" secondItem="djx-61-3Xl" secondAttribute="leadingMargin" constant="16" id="kge-7a-47W"/>
                             <constraint firstItem="7kF-By-MWp" firstAttribute="leading" secondItem="djx-61-3Xl" secondAttribute="leadingMargin" constant="16" id="kmK-1p-sPn"/>
                             <constraint firstItem="OPs-um-KZp" firstAttribute="top" secondItem="qxR-x3-6HT" secondAttribute="bottom" constant="8" id="lkQ-E2-gOh"/>
                             <constraint firstItem="smV-09-2gi" firstAttribute="top" secondItem="YdC-cM-wwl" secondAttribute="bottom" constant="8" id="okH-08-GK0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GNz-w5-AFb" secondAttribute="trailing" constant="-16" id="oqR-hn-1oV"/>
+                            <constraint firstItem="vDH-Gq-oqE" firstAttribute="top" secondItem="R0G-dy-tnD" secondAttribute="bottom" constant="16" id="qcV-UZ-j7F"/>
                             <constraint firstItem="XaZ-Is-hO1" firstAttribute="leading" secondItem="djx-61-3Xl" secondAttribute="leadingMargin" constant="16" id="qjs-MO-xbC"/>
                             <constraint firstItem="YdC-cM-wwl" firstAttribute="top" secondItem="7kF-By-MWp" secondAttribute="bottom" constant="16" id="sPf-4L-Hdr"/>
                             <constraint firstItem="7kF-By-MWp" firstAttribute="top" secondItem="OPs-um-KZp" secondAttribute="bottom" constant="8" id="t4W-bp-C6I"/>
@@ -502,6 +517,11 @@
                             <constraint firstItem="GNz-w5-AFb" firstAttribute="top" secondItem="djx-61-3Xl" secondAttribute="topMargin" id="weV-co-Wr9"/>
                             <constraint firstItem="GNz-w5-AFb" firstAttribute="leading" secondItem="djx-61-3Xl" secondAttribute="leadingMargin" constant="-16" id="y4Z-JK-rqc"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3tw-0N-mdL"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="headerView" destination="GNz-w5-AFb" id="gnb-A3-rIg"/>

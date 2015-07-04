@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TripViewController : UIViewController
+@interface TripViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end
